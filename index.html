@@ -6,9 +6,11 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20231020195127">
-	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="css/style.min.css?_v=20231103233139">
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js?_v=20231103233139"></script>
+	<link rel="shortcut icon" href="">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css?_v=20231103233139" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -44,18 +46,38 @@
 
 						</div>
 					</div>
+					<div class="btn-body__language">
+						<button class="btn__language _icon-language">
+						</button>
+					</div>
+					<div class="btns__theme">
+						<button id="dark-mode-toggle" class="dark-mode-toggle ">
+
+						</button>
+
+					</div>
+
 				</div>
 
 			</div>
+
 		</header>
+
+
+
+
+
+
+
 		<main class="page">
+
 			<section class="page__connect">
 
 				<div class="connect__container">
 					<div class="connect__block block-connect">
-						<div class="block-connect__title fw7">
+						<h2 class="block-connect__title fw7">
 							CONNECTION PEOPLE
-						</div>
+						</h2>
 						<a href="https://fond88.ru/registration" type="submit" class="block-connect__button">Регистрация</a>
 					</div>
 					<div class="connect__info info-connect">
@@ -72,7 +94,10 @@
 							<a href="https://vk.com/snebars15" class="info-connect__ic _icon-vk">
 
 							</a>
-							<a href="#" class="info-connect__ic _icon-insta">
+							<a href="https://www.facebook.com/groups/people.centr" class="info-connect__ic _icon-Fsbuk">
+
+							</a>
+							<a href="https://www.youtube.com/@People_Centr" class="info-connect__ic _icon-youtube">
 
 							</a>
 						</div>
@@ -82,9 +107,9 @@
 			</section>
 			<section class="page__publicity">
 				<div class="publicity__container">
-					<div class="publicity__title fw7">
+					<h2 class="publicity__title fw7">
 						Реклама , заработок, краудфандинг в <y> одном месте </y>
-					</div>
+					</h2>
 					<div class="publicity__cart-body">
 						<div class="publicity__cart cart-publicity">
 							<div class="cart-publicity__title">
@@ -94,7 +119,7 @@
 								Превратите просмотр рекламы в заработок вместе с нами
 							</div>
 							<div class="cart-publicity__img-body">
-								<picture><source srcset="img/rec/rec.webp" type="image/webp"><img class="cart-publicity__img" src="img/rec/rec.png" alt=""></picture>
+								<div class="cart-publicity__img-uno"></div>
 							</div>
 						</div>
 						<div class="publicity__cart cart-publicity">
@@ -105,7 +130,7 @@
 								Рост вашего капитала начинается здесь
 							</div>
 							<div class="cart-publicity__img-body">
-								<picture><source srcset="img/rec/sar.webp" type="image/webp"><img class="cart-publicity__img" src="img/rec/sar.png" alt=""></picture>
+								<div class="cart-publicity__img-two"></div>
 							</div>
 						</div>
 						<div class="publicity__cart cart-publicity">
@@ -116,7 +141,7 @@
 								Сила сообщества в каждой идее
 							</div>
 							<div class="cart-publicity__img-body">
-								<picture><source srcset="img/rec/kray.webp" type="image/webp"><img class="cart-publicity__img" src="img/rec/kray.png" alt=""></picture>
+								<div class="cart-publicity__img-free"></div>
 							</div>
 						</div>
 					</div>
@@ -124,13 +149,13 @@
 			</section>
 			<section class="page__prim">
 				<div class="prim__container">
-					<div class="prim__title fw7">
+					<h2 class="prim__title fw7">
 						Наши преимущества
-					</div>
+					</h2>
 					<div class="prim__block block-prim ">
 						<div class="block-prim__info">
 							<div>
-								<picture><source srcset="img/sit.webp" type="image/webp"><img class="block-prim__img" src="img/sit.png" alt=""></picture>
+								<div class="block-prim__img"></div>
 							</div>
 							<div class="block-prim__text">
 								Отсутствие ботов, только живые люди
@@ -138,7 +163,7 @@
 						</div>
 						<div class="block-prim__info">
 							<div>
-								<picture><source srcset="img/sit.webp" type="image/webp"><img class="block-prim__img" src="img/sit.png" alt=""></picture>
+								<div class="block-prim__img"></div>
 							</div>
 							<div class="block-prim__text">
 								Статистика в реальном времени
@@ -146,7 +171,7 @@
 						</div>
 						<div class="block-prim__info">
 							<div>
-								<picture><source srcset="img/sit.webp" type="image/webp"><img class="block-prim__img" src="img/sit.png" alt=""></picture>
+								<div class="block-prim__img"></div>
 							</div>
 							<div class="block-prim__text">
 								Независимость от традиционных финансовых институтов
@@ -154,7 +179,7 @@
 						</div>
 						<div class="block-prim__info">
 							<div>
-								<picture><source srcset="img/sit.webp" type="image/webp"><img class="block-prim__img" src="img/sit.png" alt=""></picture>
+								<div class="block-prim__img"></div>
 							</div>
 							<div class="block-prim__text">
 								Минимизация ваших рисков
@@ -166,11 +191,11 @@
 			<section class="page__we">
 				<div class="we__container">
 					<div class="we__info info-we">
-						<div class="info-we__title fw7">
+						<h2 class="info-we__title fw7">
 							Мы даем возможность
-						</div>
+						</h2>
 						<div class="info-we__img-body">
-							<picture><source srcset="img/verh.webp" type="image/webp"><img class="info-we__img" src="img/verh.png" alt=""></picture>
+							<div class="info-we__img"></div>
 						</div>
 						<a href="https://fond88.ru/registration" class="info-we__reg">
 							Регистрация
@@ -180,7 +205,7 @@
 						<div class="vosm-we__block-body">
 							<div class="vosm-we__block">
 								<div class="vosm-we__img-body">
-									<picture><source srcset="img/vosm/1.webp" type="image/webp"><img class="vosm-we__img" src="img/vosm/1.png" alt=""></picture>
+									<div class="vosm-we__img-1"></div>
 								</div>
 								<div class="vosm-we__text-body">
 									<p class="vosm-we__text">
@@ -190,7 +215,7 @@
 							</div>
 							<div class="vosm-we__block">
 								<div class="vosm-we__img-bodytwo  ">
-									<picture><source srcset="img/vosm/2.webp" type="image/webp"><img class="vosm-we__img " src="img/vosm/2.png" alt=""></picture>
+									<div class="vosm-we__img-2"></div>
 								</div>
 								<div class="vosm-we__text-body">
 									<p class="vosm-we__text vosm-we__text-two">
@@ -200,7 +225,7 @@
 							</div>
 							<div class="vosm-we__block">
 								<div class="vosm-we__img-body">
-									<picture><source srcset="img/vosm/3.webp" type="image/webp"><img class="vosm-we__img" src="img/vosm/3.png" alt=""></picture>
+									<div class="vosm-we__img-3"></div>
 								</div>
 								<div class="vosm-we__text-body">
 									<p class="vosm-we__text">
@@ -210,7 +235,7 @@
 							</div>
 							<div class="vosm-we__block">
 								<div class="vosm-we__img-bodytwo  ">
-									<picture><source srcset="img/vosm/4.webp" type="image/webp"><img class="vosm-we__img " src="img/vosm/4.png" alt=""></picture>
+									<div class="vosm-we__img-4"></div>
 								</div>
 								<div class="vosm-we__text-body">
 									<p class="vosm-we__text vosm-we__text-two">
@@ -220,7 +245,7 @@
 							</div>
 							<div class="vosm-we__block">
 								<div class="vosm-we__img-body">
-									<picture><source srcset="img/vosm/5.webp" type="image/webp"><img class="vosm-we__img" src="img/vosm/5.png" alt=""></picture>
+									<div class="vosm-we__img-5"></div>
 								</div>
 								<div class="vosm-we__text-body">
 									<p class="vosm-we__text">
@@ -280,6 +305,7 @@
 				</div>
 			</section>
 		</main>
+
 		<footer class="footer">
 			<div class="footer__container">
 				<div class="footer__block block-footer">
@@ -309,7 +335,10 @@
 						<a href="https://vk.com/snebars15" class="info-connect__ic _icon-vk">
 
 						</a>
-						<a href="#" class="info-connect__ic _icon-insta">
+						<a href="https://www.facebook.com/groups/people.centr" class="info-connect__ic _icon-Fsbuk">
+
+						</a>
+						<a href="https://www.youtube.com/@People_Centr" class="info-connect__ic _icon-youtube">
 
 						</a>
 					</div>
@@ -338,7 +367,9 @@
 		</div>
 	</div>
 </div> -->
-	<script src="js/app.min.js?_v=20231020195127"></script>
+	<script src="js/app.min.js?_v=20231103233139"></script>
+
+
 </body>
 
 </html>
