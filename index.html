@@ -6,19 +6,31 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20231104143230">
-	<script src="https://code.jquery.com/jquery-2.2.4.min.js?_v=20231104143230"></script>
+	<link rel="stylesheet" href="css/style.min.css?_v=20231223231453">
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js?_v=20231223231453"></script>
 	<link rel="shortcut icon" href="">
+	<link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/css/font-awesome.min.css?_v=20231223231453' rel='stylesheet'>
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css?_v=20231104143230" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css?_v=20231223231453" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js?_v=20231223231453"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
-	<div class="wrapper">
+	<div class="wrapper ">
+
+
+
+
+
+
+
+
+
 		<header class="header">
 			<div class="header__container">
 				<div class="header__block">
+
 					<a href="#" class="header__logo">
 						<img class="header__logo-img" src="img/logo.svg" alt="">
 					</a>
@@ -26,7 +38,7 @@
 						<button type="button" class="menu__icon icon-menu" data-da=".menuspavn,992,2"><span></span></button>
 						<nav class="menu__body">
 							<ul class="menu__list">
-								<li class="menu__item"><a href="" class="menu__link active ">Главная </a></li>
+								<li class="menu__item"><a href="" class="menu__link link-active ">Главная </a></li>
 								<li class="menu__item"><a href="" class="menu__link">FAQ</a></li>
 								<li class="menu__item"><a href="" class="menu__link">Полезные сайты </a></li>
 							</ul>
@@ -51,7 +63,7 @@
 						</button>
 					</div>
 					<div class="btns__theme">
-						<button id="dark-mode-toggle" class="dark-mode-toggle ">
+						<button id="dark-mode-toggle" class="closestbd dark-mode-toggle ">
 
 						</button>
 
@@ -62,14 +74,8 @@
 			</div>
 
 		</header>
-
-
-
-
-
-
-
 		<main class="page">
+
 
 			<section class="page__connect">
 
@@ -306,6 +312,7 @@
 			</section>
 		</main>
 
+
 		<footer class="footer">
 			<div class="footer__container">
 				<div class="footer__block block-footer">
@@ -314,7 +321,7 @@
 					</a>
 					<div class="block-footer__menu ">
 						<ul class="block-footer__list">
-							<li class="block-footer__item"><a href="https://lis2332.github.io/connect/" class="block-footer__link">Главная </a></li>
+							<li class="block-footer__item"><a href="" class="block-footer__link">Главная </a></li>
 							<li class="block-footer__item"><a href="" class="block-footer__link">FAQ </a></li>
 							<li class="block-footer__item"><a href="" class="block-footer__link">Полезные сайты </a></li>
 						</ul>
@@ -350,26 +357,107 @@
 					<div class="vosm-footer__link-body">
 						<a href="#" class="vosm-footer__link">Реклама</a>
 						<a href="#" class="vosm-footer__link">Заработок</a>
-						<a href="https://lis2332.github.io/kr/" class="vosm-footer__link">Краудфандинг</a>
+						<a href="#" class="vosm-footer__link">Краудфандинг</a>
 						<a href="#" class="vosm-footer__link">Партнерская программа</a>
 					</div>
 				</div>
 			</div>
 		</footer>
+
 	</div>
-	<!-- <div id="popup" aria-hidden="true" class="popup">
-	<div class="popup__wrapper">
-		<div class="popup__content">
-			<button data-close type="button" class="popup__close">Закрыть</button>
-			<div class="popup__text">
-				Text
+	<div id="popup" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<p data-close type="button" class="popup__close popup__close-ic">
+					<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+						<path opacity="0.5" d="M1 1L21 21M1 21L21 1" stroke="#042257" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+					</svg>
+				</p>
+				<div class="popup__title fw7">
+					Восстановление пароля
+				</div>
+				<div class="popup__text">
+					Укажите адрес электронной почты, который вы использовали при регистрации акаунта. Мы вышлем вам инструкцию по восстановлению пароля.
+				</div>
+				<form class="popup-form__email-log" action="files/sendmail/sendmail.php" method="POST">
+					<input type="text" data-quantity-max='5' name="form[email]" data-error="Error" placeholder="E-mail" class="popup-input">
+				</form>
+				<button class="popup__btn fw7">
+					Восстановить
+				</button>
 			</div>
 		</div>
 	</div>
-</div> -->
-	<script src="js/app.min.js?_v=20231104143230"></script>
 
 
+	<div id="popuptwo" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content popupreg__content ">
+				<div class="popup__title popupreg-title fw7">
+					Ваш аккаунт успешно создан
+				</div>
+				<div class="popup__text">
+					Теперь вы можете войти, используя свои учетные данные
+				</div>
+
+
+				<a href="" class="popupreg__btn fw7">
+					Войти
+				</a>
+
+
+			</div>
+		</div>
+	</div>
+	<div id="popupfree" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popupfree__content popup__content">
+				<p data-close type="button" class="popup__close popup__close-ic">
+					<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+						<path opacity="0.5" d="M1 1L21 21M1 21L21 1" stroke="#042257" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+					</svg>
+				</p>
+				<div class="popup__title popupfree-title ">
+					Оплата
+				</div>
+				<div class="popup__text popupfree-text fw7">
+					100 ₽
+				</div>
+
+				<div class="from__body-free">
+					<form>
+						<input type="text" name="form[]" placeholder="Номер карты" class="pdj-new__input">
+					</form>
+					<div class="from__body-free-dop">
+						<form>
+							<input type="text" name="form[]" placeholder="ММ/ГГ" class="pdj-new__input">
+						</form>
+						<form>
+							<input type="text" name="form[]" placeholder="CVV" class="pdj-new__input">
+						</form>
+					</div>
+					<div class="form__body-checkbox">
+						<input type="checkbox" class="welcome-checkboxtwo" />
+						<p>
+							Отправить квитанцию на почту
+						</p>
+					</div>
+					<form>
+						<input type="text" name="form[]" placeholder="Почта" class="pdj-new__input">
+					</form>
+				</div>
+				<a href="" class="popupfree__btn btn-fiol fw7">
+					Оплатить
+				</a>
+
+
+			</div>
+		</div>
+	</div>
+
+	<script src="js/app.min.js?_v=20231223231453"></script>
+
+	<script src="../dist/js/darkmode.js?_v=20231223231453"></script>
 </body>
 
 </html>
